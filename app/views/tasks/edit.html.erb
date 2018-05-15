@@ -1,0 +1,13 @@
+<div class="task-show">
+  <%= form_for @task do |t| %>
+    <%= t.label "Title:", class:"label" %><br>
+    <%= t.text_field :title, class:"field" %><br><br>
+    <%= t.label "Details:", class:"label" %><br>
+    <%= t.text_field :details, class:"field" %><br><br>
+  <%= t.check_box :completed %><%= t.label "Completed" %><br><br>
+  <%= t.submit class:"go" %>
+  <% end %>
+</div>
+<div id="back-home"><i class="fas fa-caret-square-left"></i> <%= link_to "Back to list of tasks", tasks_path %></div>
+
+

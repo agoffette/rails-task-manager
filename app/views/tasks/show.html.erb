@@ -1,0 +1,26 @@
+<div class="task-show">
+  <div class="title-header">
+    <h1><%= @task.title %></h1>
+    <div class="buttons">
+      <div class="button">
+        <%= link_to edit_path(@task.id) do %>
+          <i class="fas fa-edit"></i>
+        <% end %>
+      </div>&ensp;
+      <div class="button">
+        <%= link_to destroy_path(@task.id), method: :delete do %>
+          <i class="far fa-trash-alt"></i>
+        <% end %>
+      </div>
+    </div>
+  </div>
+  <div id="task-details"><h3><i class="fas fa-info-circle"></i> <%= @task.details %></h3></div>
+  <h3><% if @task.completed %>
+        <i class="far fa-check-square"></i> This task is completed
+        <% else %>
+        <i class="far fa-square"></i> This task is not completed yet
+        <% end %></h3>
+  </div>
+  <div id="back-home"><i class="fas fa-caret-square-left"></i> <%= link_to "Back to list of tasks", tasks_path %></div>
+
+

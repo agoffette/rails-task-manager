@@ -1,0 +1,13 @@
+<div class="add-body">
+<h1>Add a new task:</h1>
+<div id="add-details">
+  <%= form_for :task do |t| %>
+  <%= t.label "Title:" %><br>
+  <%= t.text_field :title, class:"field" %><br><br>
+  <%= t.label "Details:" %><br>
+  <%= t.text_field :details, class:"field" %><br><br>
+  <%= t.submit class:"go" %>
+<% end %>
+</div>
+</div>
+<div id="back-home"><i class="fas fa-caret-square-left"></i> <%= link_to "Back to list of tasks", tasks_path %>

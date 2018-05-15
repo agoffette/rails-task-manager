@@ -1,3 +1,132 @@
 // Place all the styles related to the Tasks controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.index-body, .add-body {
+  font-family: Helvetica;
+  margin-top: 30px;
+  border-bottom: 1px solid #D2DACB;
+
+
+  h1 {
+    border-bottom: 6px solid #D2DACB;
+    margin: 10px;
+  }
+}
+
+.tasks-list {
+  list-style-type: none;
+  padding: 20px;
+  margin: 0;
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
+
+  a:hover {
+    color: #D2DACB;
+  }
+}
+
+.title-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 50px;
+  padding: 10px;
+}
+
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.button {
+  border: 0.5px solid black;
+  border-radius: 50px;
+  font-size: 14px;
+  width: 50px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  i {
+    text-decoration: none;
+    color: black;
+  }
+  &:hover {
+    background: #D2DACB;
+    font-weight: bolder;
+  }
+}
+
+.task-show {
+  border-bottom: 1px solid #D2DACB;
+  padding: 20px;
+  margin: 0;
+  font-family: Helvetica;
+
+  h1 {
+    margin: 0;
+    padding: 10px;
+  }
+}
+
+#task-details {
+  padding: 20px;
+  background: #D2DACB;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  font-weight: light;
+}
+
+#add-details {
+  padding: 20px;
+  margin: 0;
+  font-family: Helvetica;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+#back-home, #add-task {
+  padding: 10px;
+  font-family: Helvetica;
+  color: #999F94;
+
+  a {
+    text-decoration: none;
+    color: #999F94;
+  }
+
+  a:hover {
+    color: #D2DACB;
+  }
+}
+
+.field {
+  width: 500px;
+  height: 25px;
+  border-radius: 5px;
+  margin: 5px;
+  box-shadow: 2px 2px 5px -5px rgba(168,166,168,1);
+}
+
+.label {
+  font-weight: bolder;
+}
+
+.go {
+  background: #999F94;
+  border: 0.5px solid transparent;
+  box-shadow: 2px 2px 5px -5px rgba(168,166,168,1);
+  color: white;
+  border-radius: 50px;
+  padding: 5px 25px;
+  font-size: 14px;
+
+  &:hover {
+    background: #D2DACB;
+  }
+}
